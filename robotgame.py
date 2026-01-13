@@ -101,7 +101,7 @@ class Sniper(Robot):
             return
         critical = random.random() < 0.3
         dmg = self.damage * 2 if critical else self.damage
-        print(f"{self.clas} стреляет {'(ДАЕДАЛУС СРАБОТАЛ!!!!!!!!)' if critical else ''} по {other.clas}")
+        print(f"{self.clas} стреляет {'(КРИТ СРАБОТАЛ!!!!!!!!)' if critical else ''} по {other.clas}")
         other.take_damage(dmg)
 
 
