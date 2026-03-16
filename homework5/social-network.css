@@ -1,0 +1,225 @@
+body{
+    height: 90vh;
+    padding: 50px;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    gap: 20px;
+    font-family: system-ui;
+}
+
+
+/* ЭТО ЛЕВАЯ ЧАСТЬ */
+
+.leftbar{
+    flex: 15%;
+    padding: 40px;
+    background-color: #18191D;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.nav img{
+    width: 45px;
+}
+
+.out img{
+    width: 50px;
+}
+
+.logo{
+font-size: 25px;
+font-weight: bolder;
+}
+
+/* ЭТО ЛЕВАЯ ЧАСТЬ */
+
+
+/* MAIN */
+
+.main{
+    flex: 80%;
+    background-color: #18191D;
+    border-radius: 36px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* HEADER */
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input{
+    width: 400px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.main-header-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.main-header-icons img{
+    width: 30px;
+}
+
+
+/* TITLE */
+
+.title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* POST */
+
+.main-content{
+    background: #E5E5E5;
+    border-radius: 25px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: black;
+}
+
+
+.post-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-user{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.post-user img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.post-icons{
+    display: flex;
+    gap: 15px;
+}
+
+.post-icons img{
+    width: 25px;
+}
+
+
+.post-image img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.post-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post-reactions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-reactions-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.post-reactions-icons img{
+    width: 26px;
+}
+
+.created_at{
+    font-size: 14px;
+    color: gray;
+}
+
+
+/* ЭТО ПРАВАЯ ЧАСТЬ */
+
+.rightbar{
+    flex: 15%;
+    background-color: #18191D;
+    padding: 40px;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.user {
+    display: flex;
+    gap: 50px;
+}
+
+.avatar img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.avatar-info p{
+    font-size: 20px;
+    color: gray;
+    font-weight: bold;
+}
+
+.friends{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 2px white solid;
+    padding-top: 30px;
+}
+
+.friend{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.friend-avatar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.friend-info h1{
+    font-size: 16px;
+}
+
+.friend-info p{
+    font-size: 12px;
+}
