@@ -1,0 +1,142 @@
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 15px;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+.header, .footer {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  border-radius: 25px;
+  opacity: 0.9;
+  flex-wrap: wrap;
+}
+
+.leftside, .footer-left {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+.order button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-leftside {
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.top, .bot {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 calc(25% - 20px);
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.img-a {
+  width: 100%;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-right {
+  font-size: 14px;
+  color: gray;
+}
+
+/* ADAPTIVE */
+@media (max-width: 900px) {
+  .card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 568px) {
+  .header, .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .leftside, .footer-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .order button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
